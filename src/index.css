@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body{
+    font-family: poppins;
+    font-size: 18px;
+}
+li{
+    font-family:'Poppins', sans-serif ;
+    color: white;
+    font-weight: 700;}
+button{
+    font-family:'Poppins', sans-serif ;
+    color: white;
+    font-weight: 700;
+}
