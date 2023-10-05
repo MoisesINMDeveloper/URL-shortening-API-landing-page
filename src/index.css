@@ -4,6 +4,8 @@
 body{
     font-family: poppins;
     font-size: 18px;
+    width: 100%;
+    margin: 0;
 }
 li{
     font-family:'Poppins', sans-serif ;

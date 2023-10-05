@@ -78,31 +78,32 @@ export default function ShorteningUrl() {
     };
 
     return (
-        <section className="mt-[16rem] bg-[#f3f3f3] w-[100vw]
+        <section className="mt-[11rem] lg:mt-[40rem] bg-[#f3f3f3] w-[100vw] lg:w-[full]
         ] flex flex-col items-center">
-            <button className="relative mt-[-13.7rem] bg-[#2acfcf] h-[3rem] w-[11rem] rounded-3xl ">Get Started</button>
-            <form className="relative mt-[6rem] bg-[#3b3054] p-5 w-[90vw] flex flex-col rounded-lg items-center" action="">
-                <input className={`h-[3rem] w-[18rem] rounded-lg mb-4 p-3 ${errorMessage ? ' border-2 outline-none border-red-500 hover:border-red-500 placeholder:text-red-300' : ''}`} type="text" id="linkInput" placeholder="Shorten a link here..." />
-                <div className="relative mt-[-0.7rem] mb-4 w-[77vw]">
-                    {errorMessage && (
-                        <p className="text-red-500 text-sm italic">{errorMessage}</p>
-                    )}
+            <form className="relative mt-[-5rem] bg-[#3b3054] p-5 lg:p-[3rem] w-[90vw] flex flex-col rounded-lg items-center lg:flex-row lg:h-[10rem] lg:justify-center lg:items-center" action="">
+                <div className="lg:flex-col">
+                    <input className={`h-[3rem] w-[18rem] lg:w-[53rem] lg:h-[4rem] rounded-lg mb-4 p-3 lg:mb-[0rem] ${errorMessage ? ' border-2 outline-none border-red-500 hover:border-red-500 placeholder:text-red-300' : ''}`} type="text" id="linkInput" placeholder="Shorten a link here..." />
+                    <div className="relative mt-[-1rem] mb-4 w-[20vw]">
+                        {errorMessage && (
+                            <p className="text-red-500 text-sm italic lg:mt-[1rem] lg:absolute">{errorMessage}</p>
+                        )}
+                    </div>
                 </div>
-                <button className="bg-[#2acfcf] h-[3rem] w-[18rem] rounded-lg" onClick={handleShortenLink} >Shorten it!</button>
+                <button className="bg-[#2acfcf] h-[3rem] w-[18rem] rounded-lg lg:h-[4rem] lg:w-[10rem] lg:ml-[2rem]" onClick={handleShortenLink} >Shorten it!</button>
             </form>
             <div>
                 <div>
                     {links.map((link, index) => (
                         <>
-                            <ul key={index} className="w-[90vw] bg-[white] my-6 rounded-lg">
-                                <li className="border-b w-[90vw] py-2 px-4">
+                            <ul key={index} className="w-[90vw] bg-[white] my-6 rounded-lg lg:flex lg:items-center lg:h-[5rem]">
+                                <li className="border-b lg:border-none w-[90vw] py-2 px-4">
                                     <p className="text-black text-base py-2 pr-12 overflow-hidden">{link.original_link}</p>
                                 </li>
                                 <li className="my-4 px-4">
                                     <p className="text-[#2acfcf] text-base">{link.full_short_link}</p>
                                 </li>
 
-                                <button className="bg-[#2acfcf] hover:bg-[#3b3054] mx-4 mt-2 mb-4 h-[2.5rem] w-[80vw] rounded-lg" onClick={() => copyToClipboard(link.full_short_link, event)}>Copy</button>
+                                <button className="bg-[#2acfcf] hover:bg-[#3b3054] mx-4 mt-2 mb-4 lg:mb-[0.5rem] h-[2.5rem] w-[81vw] lg:w-[10rem] rounded-lg" onClick={() => copyToClipboard(link.full_short_link, event)}>Copy</button>
                             </ul>
                         </>
                     ))}

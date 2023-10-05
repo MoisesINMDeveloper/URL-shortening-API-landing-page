@@ -18,6 +18,20 @@ export default {
         VeryDarkBlue: "#35323e",
         VeryDarkViolet: "#232127",
       },
+      extend: {
+        backgroundImage: {
+          bgShortenMobile: "url('/bg-shorten-mobile.svg')",
+          bgShortenDesktop: "url('/bg-shorten-desktop.svg')",
+          bgBoostMobile: "url('/bg-boost-mobile.svg')",
+          bgBoostDesktop: "url('/bg-boost-desktop.svg')",
+        },
+      },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        desktop: "1440px",
+      },
     },
     extend: {
       backgroundImage: {

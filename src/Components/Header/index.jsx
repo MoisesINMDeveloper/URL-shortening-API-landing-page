@@ -13,7 +13,7 @@ export default function Header() {
                 <li className="md:text-[Gray] hover:text-black cursor-pointer md:mx-[1rem] mt-[2.3rem] md:mt-[0]">Features</li>
                 <li className="md:text-[Gray] hover:text-black cursor-pointer md:mx-[1rem] mt-[2.3rem] md:mt-[0]">Pricing</li>
                 <li className="md:text-[Gray] hover:text-black cursor-pointer md:mx-[1rem] mt-[2.3rem] md:mt-[0]">Resources</li>
-                <li className="mt-[2.5rem] hover:text-black cursor-pointer mb-[2rem] w-[17rem] border-t-[1px] border-[#9e9aa75b] text-center pt-[2rem] md:text-[Gray] md:mx-[1rem] md:mt-[0] md:ml-[20rem]">Login</li>
+                <li className="mt-[2.5rem] hover:text-black cursor-pointer mb-[2rem] w-[17rem] border-t-[1px] lg:border-t-[0] border-[#9e9aa75b] text-center pt-[2rem] md:text-[Gray] md:mx-[1rem] md:mt-[0] md:ml-[20rem]">Login</li>
                 <div>
                     <button className="bg-[Cyan] hover:bg-[#2acfcfa1] w-[17rem] h-[3rem] rounded-3xl md:w-[7rem] md:h-[2.5rem] md:ml-[1rem]">Sign Up</button>
                 </div>
